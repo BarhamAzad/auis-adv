@@ -1,0 +1,124 @@
+{
+  "testedAt": "2026-10-06T13:09:50.223Z",
+  "browser": "Google Chrome 154.0.8037.98",
+  "mode": "headless, native WebGL (not forced software rendering)",
+  "os": "macOS 15.5, arm64",
+  "device": "MacBook Pro (MacBookPro18,3), Apple M1 Pro, 8-core CPU, 16 GB memory",
+  "viewport": "1440×900, device scale1; responsive390×844",
+  "url": "http://127.0.0.1:4180/",
+  "passed": [
+    "3D world starts without runtime errors",
+    "Walking and running respond to held keyboard input",
+    "Jump lifts player and lands on solid terrain",
+    "Orbit camera and zoom respond and stay above terrain",
+    "Building and river collision prevent blocked movement",
+    "Sera conversation opens with real proximity and E interaction",
+    "Beginner investigation fails, hints, retries, then awards journal",
+    "Verified Professor Switzner guide opens with E",
+    "Bridge model requires deck, material, and supports then repairs world",
+    "Professor Al-Waeli solar guide and feedback",
+    "Solar angle and complete circuit power engineering workshop and first lantern",
+    "Computing algorithm executes, fails on obstacle, then debugs",
+    "Business budget observes demand and solves allocation",
+    "English compares records and rejects unsupported reports",
+    "Laboratory requires comparable recorded simulated observations",
+    "Council negotiation shows social constraints and shared agreement",
+    "Mathematics reflection model observes rays and receives aligned light",
+    "Dentistry model assembles four structures",
+    "Pharmacy sorts imaginary ingredients and tests fictional formulation",
+    "All nine regions have guide, companion, and reachable playable activity",
+    "Final beacon reward reaches nine lanterns without duplicate replay rewards",
+    "Archive classifies colleges, departments, minors, APP and source audit",
+    "Map and journal keyboard shortcuts, discovered fast travel and quest records",
+    "Saved progress, position, and settings survive browser reload",
+    "Reset confirms intent and restores a fresh journey",
+    "Small viewport retains usable menus, dialogs, and touch controls",
+    "No browser runtime errors across full journey"
+  ],
+  "failures": [],
+  "errors": [],
+  "performance": [
+    {
+      "quality": "high",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        }
+      ]
+    },
+    {
+      "quality": "balanced",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "balanced"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "balanced"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "balanced"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "balanced"
+        }
+      ]
+    }
+  ]
+}

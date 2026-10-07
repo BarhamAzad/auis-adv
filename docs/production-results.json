@@ -1,0 +1,916 @@
+{
+  "browser": "Google Chrome 154.0.8037.98",
+  "device": {
+    "model": "MacBookPro18,3",
+    "cpu": "Apple M1 Pro",
+    "memoryBytes": 17179869184,
+    "os": "15.5"
+  },
+  "gpu": {
+    "vendor": "Google Inc. (Apple)",
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+  },
+  "testedAt": "2026-10-06T13:11:46.431Z",
+  "checks": [
+    "Production build and bundled fonts render",
+    "Approach and interact: sera",
+    "Approach and interact: mira",
+    "Approach and interact: intro",
+    "Approach and interact: engineer-switzner",
+    "Approach and interact: engineering-support",
+    "Approach and interact: bridge",
+    "Approach and interact: engineer-energy",
+    "Approach and interact: energy",
+    "Approach and interact: computing-guide",
+    "Approach and interact: computing-support",
+    "Approach and interact: commands",
+    "Approach and interact: business-guide",
+    "Approach and interact: business-support",
+    "Approach and interact: market",
+    "Approach and interact: english-guide",
+    "Approach and interact: english-support",
+    "Approach and interact: story",
+    "Approach and interact: medical-guide",
+    "Approach and interact: medical-support",
+    "Approach and interact: samples",
+    "Approach and interact: social-guide",
+    "Approach and interact: social-support",
+    "Approach and interact: council",
+    "Approach and interact: mathematics-guide",
+    "Approach and interact: mathematics-support",
+    "Approach and interact: light",
+    "Approach and interact: dentistry-guide",
+    "Approach and interact: dentistry-support",
+    "Approach and interact: tooth",
+    "Approach and interact: pharmacy-guide",
+    "Approach and interact: pharmacy-support",
+    "Approach and interact: ingredients",
+    "Original music starts and stops after user gesture",
+    "Camera settings, modal focus, and movement pause remain usable",
+    "Production has no browser runtime errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "performance": [
+    {
+      "region": "village",
+      "deviceScale": 1,
+      "quality": "high",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        }
+      ]
+    },
+    {
+      "region": "engineering",
+      "deviceScale": 1,
+      "quality": "high",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 141,
+          "triangles": 471104,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 141,
+          "triangles": 471104,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 141,
+          "triangles": 471104,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 141,
+          "triangles": 471104,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        }
+      ]
+    },
+    {
+      "region": "computing",
+      "deviceScale": 1,
+      "quality": "high",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 180,
+          "triangles": 479262,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 180,
+          "triangles": 479262,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 180,
+          "triangles": 479262,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 180,
+          "triangles": 479262,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        }
+      ]
+    },
+    {
+      "region": "business",
+      "deviceScale": 1,
+      "quality": "high",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 65,
+          "triangles": 384048,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 65,
+          "triangles": 384048,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 65,
+          "triangles": 384048,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 65,
+          "triangles": 384048,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        }
+      ]
+    },
+    {
+      "region": "english",
+      "deviceScale": 1,
+      "quality": "high",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 70,
+          "triangles": 414256,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 70,
+          "triangles": 414256,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 70,
+          "triangles": 414256,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 70,
+          "triangles": 414256,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        }
+      ]
+    },
+    {
+      "region": "medical",
+      "deviceScale": 1,
+      "quality": "high",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 87,
+          "triangles": 423914,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 87,
+          "triangles": 423914,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 87,
+          "triangles": 423914,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 87,
+          "triangles": 423914,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        }
+      ]
+    },
+    {
+      "region": "social",
+      "deviceScale": 1,
+      "quality": "high",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 66,
+          "triangles": 389500,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 66,
+          "triangles": 389500,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 66,
+          "triangles": 389500,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 66,
+          "triangles": 389500,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        }
+      ]
+    },
+    {
+      "region": "mathematics",
+      "deviceScale": 1,
+      "quality": "high",
+      "samples": [
+        {
+          "fps": 54,
+          "drawCalls": 63,
+          "triangles": 380448,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 63,
+          "triangles": 380448,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 63,
+          "triangles": 380448,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 63,
+          "triangles": 380448,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        }
+      ]
+    },
+    {
+      "region": "dentistry",
+      "deviceScale": 1,
+      "quality": "high",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 73,
+          "triangles": 397292,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 73,
+          "triangles": 397292,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 73,
+          "triangles": 397292,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 73,
+          "triangles": 397292,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        }
+      ]
+    },
+    {
+      "region": "pharmacy",
+      "deviceScale": 1,
+      "quality": "high",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 90,
+          "triangles": 427800,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 90,
+          "triangles": 427800,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 90,
+          "triangles": 427800,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 90,
+          "triangles": 427800,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "quality": "high"
+        }
+      ]
+    },
+    {
+      "region": "village",
+      "deviceScale": 2,
+      "quality": "high",
+      "samples": [
+        {
+          "fps": 53,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        }
+      ]
+    },
+    {
+      "region": "engineering",
+      "deviceScale": 2,
+      "quality": "high",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 141,
+          "triangles": 471104,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 141,
+          "triangles": 471104,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 141,
+          "triangles": 471104,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 141,
+          "triangles": 471104,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        }
+      ]
+    },
+    {
+      "region": "computing",
+      "deviceScale": 2,
+      "quality": "high",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 180,
+          "triangles": 479262,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 180,
+          "triangles": 479262,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 180,
+          "triangles": 479262,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 180,
+          "triangles": 479262,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        }
+      ]
+    },
+    {
+      "region": "mathematics",
+      "deviceScale": 2,
+      "quality": "high",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 63,
+          "triangles": 380448,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 63,
+          "triangles": 380448,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 63,
+          "triangles": 380448,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 63,
+          "triangles": 380448,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        }
+      ]
+    },
+    {
+      "region": "pharmacy",
+      "deviceScale": 2,
+      "quality": "high",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 90,
+          "triangles": 427800,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 90,
+          "triangles": 427800,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 90,
+          "triangles": 427800,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 90,
+          "triangles": 427800,
+          "pixelRatio": 1.8,
+          "width": 2592,
+          "height": 1620,
+          "quality": "high"
+        }
+      ]
+    },
+    {
+      "region": "village",
+      "deviceScale": 2,
+      "quality": "balanced",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 197,
+          "triangles": 530808,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        }
+      ]
+    },
+    {
+      "region": "engineering",
+      "deviceScale": 2,
+      "quality": "balanced",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 141,
+          "triangles": 471104,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 141,
+          "triangles": 471104,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 141,
+          "triangles": 471104,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 141,
+          "triangles": 471104,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        }
+      ]
+    },
+    {
+      "region": "computing",
+      "deviceScale": 2,
+      "quality": "balanced",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 180,
+          "triangles": 479262,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 180,
+          "triangles": 479262,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 180,
+          "triangles": 479262,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 180,
+          "triangles": 479262,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        }
+      ]
+    },
+    {
+      "region": "mathematics",
+      "deviceScale": 2,
+      "quality": "balanced",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 63,
+          "triangles": 380448,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 63,
+          "triangles": 380448,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 63,
+          "triangles": 380448,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 63,
+          "triangles": 380448,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        }
+      ]
+    },
+    {
+      "region": "pharmacy",
+      "deviceScale": 2,
+      "quality": "balanced",
+      "samples": [
+        {
+          "fps": 60,
+          "drawCalls": 90,
+          "triangles": 427800,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 90,
+          "triangles": 427800,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 90,
+          "triangles": 427800,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        },
+        {
+          "fps": 60,
+          "drawCalls": 90,
+          "triangles": 427800,
+          "pixelRatio": 1.15,
+          "width": 1655,
+          "height": 1035,
+          "quality": "balanced"
+        }
+      ]
+    }
+  ]
+}

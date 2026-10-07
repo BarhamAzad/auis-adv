@@ -1,0 +1,218 @@
+{
+  "testedAt": "2026-10-06T12:41:14.741Z",
+  "browser": "154.0.8037.98",
+  "movement": "Real WASD + Shift, no debug repositioning",
+  "checks": [
+    "On-foot approach and E interaction: sera",
+    "On-foot approach and E interaction: mira",
+    "On-foot approach and E interaction: intro",
+    "On-foot approach and E interaction: archive",
+    "On-foot approach and E interaction: beacon",
+    "On-foot approach and E interaction: medical-guide",
+    "On-foot approach and E interaction: medical-support",
+    "On-foot approach and E interaction: samples",
+    "On-foot approach and E interaction: english-guide",
+    "On-foot approach and E interaction: english-support",
+    "On-foot approach and E interaction: story",
+    "On-foot approach and E interaction: business-guide",
+    "On-foot approach and E interaction: business-support",
+    "On-foot approach and E interaction: market",
+    "On-foot approach and E interaction: computing-guide",
+    "On-foot approach and E interaction: computing-support",
+    "On-foot approach and E interaction: commands",
+    "On-foot approach and E interaction: engineering-support",
+    "On-foot approach and E interaction: engineer-switzner",
+    "On-foot approach and E interaction: bridge",
+    "Repair crossing through activity UI after walking from APP",
+    "On-foot approach and E interaction: engineer-energy",
+    "On-foot approach and E interaction: energy",
+    "On-foot approach and E interaction: pharmacy-guide",
+    "On-foot approach and E interaction: pharmacy-support",
+    "On-foot approach and E interaction: ingredients",
+    "On-foot approach and E interaction: dentistry-guide",
+    "On-foot approach and E interaction: dentistry-support",
+    "On-foot approach and E interaction: tooth",
+    "On-foot approach and E interaction: mathematics-guide",
+    "On-foot approach and E interaction: mathematics-support",
+    "On-foot approach and E interaction: light",
+    "On-foot approach and E interaction: social-guide",
+    "On-foot approach and E interaction: social-support",
+    "On-foot approach and E interaction: council",
+    "Journey discovered every region on foot and crossed repaired bridge",
+    "No browser runtime errors during traversal"
+  ],
+  "failures": [],
+  "errors": [],
+  "routes": [
+    {
+      "id": "sera",
+      "waypoints": 2,
+      "distance": 5
+    },
+    {
+      "id": "mira",
+      "waypoints": 2,
+      "distance": 3
+    },
+    {
+      "id": "intro",
+      "waypoints": 2,
+      "distance": 3
+    },
+    {
+      "id": "archive",
+      "waypoints": 2,
+      "distance": 11
+    },
+    {
+      "id": "beacon",
+      "waypoints": 2,
+      "distance": 5
+    },
+    {
+      "id": "medical-guide",
+      "waypoints": 5,
+      "distance": 65
+    },
+    {
+      "id": "medical-support",
+      "waypoints": 2,
+      "distance": 4
+    },
+    {
+      "id": "samples",
+      "waypoints": 2,
+      "distance": 1
+    },
+    {
+      "id": "english-guide",
+      "waypoints": 4,
+      "distance": 46
+    },
+    {
+      "id": "english-support",
+      "waypoints": 2,
+      "distance": 6
+    },
+    {
+      "id": "story",
+      "waypoints": 2,
+      "distance": 2
+    },
+    {
+      "id": "business-guide",
+      "waypoints": 3,
+      "distance": 50
+    },
+    {
+      "id": "business-support",
+      "waypoints": 2,
+      "distance": 6
+    },
+    {
+      "id": "market",
+      "waypoints": 2,
+      "distance": 2
+    },
+    {
+      "id": "computing-guide",
+      "waypoints": 4,
+      "distance": 48
+    },
+    {
+      "id": "computing-support",
+      "waypoints": 2,
+      "distance": 7
+    },
+    {
+      "id": "commands",
+      "waypoints": 2,
+      "distance": 5
+    },
+    {
+      "id": "engineering-support",
+      "waypoints": 3,
+      "distance": 46
+    },
+    {
+      "id": "engineer-switzner",
+      "waypoints": 2,
+      "distance": 4
+    },
+    {
+      "id": "bridge",
+      "waypoints": 2,
+      "distance": 1
+    },
+    {
+      "id": "engineer-energy",
+      "waypoints": 5,
+      "distance": 33
+    },
+    {
+      "id": "energy",
+      "waypoints": 2,
+      "distance": 2
+    },
+    {
+      "id": "pharmacy-guide",
+      "waypoints": 5,
+      "distance": 39
+    },
+    {
+      "id": "pharmacy-support",
+      "waypoints": 2,
+      "distance": 5
+    },
+    {
+      "id": "ingredients",
+      "waypoints": 2,
+      "distance": 1
+    },
+    {
+      "id": "dentistry-guide",
+      "waypoints": 3,
+      "distance": 43
+    },
+    {
+      "id": "dentistry-support",
+      "waypoints": 3,
+      "distance": 4
+    },
+    {
+      "id": "tooth",
+      "waypoints": 2,
+      "distance": 1
+    },
+    {
+      "id": "mathematics-guide",
+      "waypoints": 2,
+      "distance": 46
+    },
+    {
+      "id": "mathematics-support",
+      "waypoints": 2,
+      "distance": 5
+    },
+    {
+      "id": "light",
+      "waypoints": 2,
+      "distance": 1
+    },
+    {
+      "id": "social-guide",
+      "waypoints": 4,
+      "distance": 49
+    },
+    {
+      "id": "social-support",
+      "waypoints": 2,
+      "distance": 4
+    },
+    {
+      "id": "council",
+      "waypoints": 2,
+      "distance": 1
+    }
+  ]
+}

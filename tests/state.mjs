@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import { loadState, saveState, resetState, lanternCount, SAVE_KEY } from '../src/game/state.js';
+let data=null;
+globalThis.localStorage={getItem:()=>data,setItem:(key,value)=>{assert.equal(key,SAVE_KEY);data=value;},removeItem:()=>{data=null;}};
+const legacy={version:1,completed:['bridge','energy','commands'],discovered:['village','engineering','computing'],position:{x:22,z:-21},region:'engineering',welcomed:true,settings:{quality:'balanced',music:true,sensitivity:1.4,reducedMotion:true}};
+data=JSON.stringify(legacy);const loaded=loadState();assert.deepEqual(loaded.completed,legacy.completed);assert.deepEqual(loaded.position,legacy.position);assert.deepEqual(loaded.settings,legacy.settings);assert.equal(lanternCount(loaded),2);
+data=JSON.stringify({...legacy,completed:['bridge','bridge','energy','missing'],discovered:['missing','engineering','engineering'],region:'missing',position:{x:'bad',z:2},settings:{quality:'ultra',sensitivity:999,music:'false'}});
+const repaired=loadState();assert.deepEqual(repaired.completed,['bridge','energy']);assert.deepEqual(repaired.discovered,['village','engineering']);assert.equal(repaired.position,null);assert.equal(repaired.region,'village');assert.equal(repaired.settings.music,false);assert.equal(repaired.settings.quality,'high');assert.equal(repaired.settings.sensitivity,2);assert.equal(lanternCount(repaired),1);
+data='{';assert.deepEqual(loadState().completed,[]);assert.ok(saveState(loaded));assert.deepEqual(loadState().position,legacy.position);
+const before=loaded.savedAt;localStorage.setItem=()=>{throw new Error('blocked');};assert.equal(saveState(loaded),false);assert.equal(loaded.savedAt,before);localStorage.getItem=localStorage.removeItem=()=>{throw new Error('blocked');};assert.deepEqual(loadState().completed,[]);assert.deepEqual(resetState().completed,[]);
+console.log('PASS legacy save compatibility, corrupt save recovery, settings validation, duplicate lanterns and blocked storage');

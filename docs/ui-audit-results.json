@@ -1,0 +1,30 @@
+{
+  "testedAt": "2026-10-06T13:09:36.065Z",
+  "browser": "Google Chrome 154.0.8037.98",
+  "url": "http://127.0.0.1:4180/",
+  "checks": [
+    "Exact official academic names in HUD, map and archive",
+    "Dialog restores opener focus and keeps keyboard focus inside",
+    "Native map buttons select with Space and preserve long names",
+    "Music connects output once and stops immediately",
+    "Disabling music while resume is pending cannot start later notes",
+    "Saved music resumes after a keyboard gesture on reload",
+    "Failed retest clears success panel; replay does not award twice",
+    "Reordering activity steps retains keyboard focus",
+    "Long-name dialogs fit five viewport sizes",
+    "Every academic archive keeps its full name and content within 390px",
+    "All activity and faculty conversation panels fit 390px",
+    "Touch controls clear long names and release movement on lost capture",
+    "Blocked storage reports failure without changing saved timestamp",
+    "Unavailable audio gives feedback and returns music setting to off",
+    "OS reduced motion applies to new journey and programming animation",
+    "UI audit has no browser runtime errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "screenshots": [
+    "public/screenshots/09-official-world-map.png",
+    "public/screenshots/10-mobile-official-region.png",
+    "public/screenshots/11-mobile-official-map.png"
+  ]
+}

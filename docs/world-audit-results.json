@@ -1,0 +1,851 @@
+{
+  "testedAt": "2026-10-06T13:09:35.700Z",
+  "browser": "Google Chrome 154.0.8037.98",
+  "url": "http://127.0.0.1:4180/",
+  "viewport": "1440×900; touch390×844",
+  "checks": [
+    "Keyboard diagonal movement slides along solid walls without penetration",
+    "Running jump cannot cross the unrepaired river, repaired bridge crosses on foot",
+    "Terrain sampling agrees with the rendered triangle surface and walking ground",
+    "Camera remains outside architecture and above rendered terrain during real orbit",
+    "Partial preference updates preserve reduced motion and disabled shadows",
+    "Wall obstruction prevents proximity interaction with the hidden target",
+    "Jump pauses in the journal and resumes landing without queued input",
+    "Window blur clears held movement and lost canvas capture ends orbit",
+    "Touch movement releases held input when pointer capture is lost",
+    "Every guide, companion and station has an unobstructed walkable approach, including council reward relocation",
+    "Observatory camera clears the explorer lower body across foreground terrain",
+    "Trading hall entry walks onto its visible interior floor above the shoreline",
+    "Nearby crane obstruction keeps the camera outside the explorer body",
+    "E interaction remains available after focus returns to a HUD menu button",
+    "Regression scenarios produce no browser runtime errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "measurements": {
+    "wallSliding": {
+      "start": [
+        -9.59,
+        0.74,
+        10.270000000000001
+      ],
+      "end": [
+        -7.387220955340388,
+        0.74,
+        10.140104484388756
+      ],
+      "samples": 33
+    },
+    "river": {
+      "center": -10.050821331843402,
+      "start": [
+        22,
+        0.5397309124317426,
+        -4.8508213318434015
+      ],
+      "stopped": [
+        22,
+        0.050309259938348,
+        -5.1663813325014365
+      ],
+      "crossed": [
+        22,
+        1.16,
+        -15.664371331974536
+      ],
+      "jumpPeak": 1.8075843324308816
+    },
+    "terrain": {
+      "points": 260,
+      "maxSurfaceError": 9.486558010252111e-7,
+      "maxGroundError": 9.486558010252111e-7
+    },
+    "camera": [
+      {
+        "region": "village",
+        "samples": 60,
+        "collisions": [],
+        "minimumClearance": 3.454681648258766
+      },
+      {
+        "region": "engineering",
+        "samples": 60,
+        "collisions": [],
+        "minimumClearance": 5.68941321854138
+      },
+      {
+        "region": "computing",
+        "samples": 60,
+        "collisions": [],
+        "minimumClearance": 4.039413433838495
+      },
+      {
+        "region": "business",
+        "samples": 60,
+        "collisions": [],
+        "minimumClearance": 3.4881762715056364
+      },
+      {
+        "region": "english",
+        "samples": 60,
+        "collisions": [],
+        "minimumClearance": 3.550545470686816
+      },
+      {
+        "region": "medical",
+        "samples": 60,
+        "collisions": [],
+        "minimumClearance": 4.02348100053956
+      },
+      {
+        "region": "social",
+        "samples": 60,
+        "collisions": [],
+        "minimumClearance": 4.420752383900011
+      },
+      {
+        "region": "mathematics",
+        "samples": 60,
+        "collisions": [],
+        "minimumClearance": 0.4500000000000002
+      },
+      {
+        "region": "dentistry",
+        "samples": 60,
+        "collisions": [],
+        "minimumClearance": 5.121619922210178
+      },
+      {
+        "region": "pharmacy",
+        "samples": 59,
+        "collisions": [],
+        "minimumClearance": 4.039420602581158
+      }
+    ],
+    "partialSettings": {
+      "before": {
+        "name": "original-character-sera",
+        "head": [
+          0,
+          0,
+          0
+        ],
+        "cape": [
+          -0.035,
+          0,
+          0
+        ],
+        "torso": 1,
+        "shadows": false
+      },
+      "after": {
+        "name": "original-character-sera",
+        "head": [
+          0,
+          0,
+          0
+        ],
+        "cape": [
+          -0.035,
+          0,
+          0
+        ],
+        "torso": 1,
+        "shadows": false
+      }
+    },
+    "wallInteraction": {
+      "blocked": "sera",
+      "position": {
+        "x": -4.7778379553803685,
+        "z": 14.209025410440436
+      },
+      "available": null
+    },
+    "pauseJump": {
+      "start": [
+        0,
+        0.65,
+        19
+      ],
+      "raised": [
+        0,
+        1.6061683801564046,
+        19
+      ],
+      "paused": [
+        0,
+        1.6061683801564046,
+        19
+      ],
+      "still": [
+        0,
+        1.6061683801564046,
+        19
+      ],
+      "landed": [
+        0,
+        0.65,
+        19
+      ]
+    },
+    "touchCapture": {
+      "pointerId": 2,
+      "before": [
+        0,
+        0.65,
+        17.80869999986887
+      ],
+      "after": [
+        0,
+        0.65,
+        17.80869999986887
+      ]
+    },
+    "targetApproaches": [
+      {
+        "id": "sera",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 60,
+        "x": -2.5,
+        "z": 10.8
+      },
+      {
+        "id": "mira",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 2.4,
+        "z": 12
+      },
+      {
+        "id": "intro",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 61,
+        "x": 3.6,
+        "z": 8.9
+      },
+      {
+        "id": "archive",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -8,
+        "z": 2.5
+      },
+      {
+        "id": "beacon",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 67,
+        "x": 0,
+        "z": 2.3
+      },
+      {
+        "id": "engineer-switzner",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 24.8,
+        "z": -2.8
+      },
+      {
+        "id": "engineering-support",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 18.4,
+        "z": -2.3
+      },
+      {
+        "id": "bridge",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 54,
+        "x": 22,
+        "z": -4.3
+      },
+      {
+        "id": "engineer-energy",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 43,
+        "z": -24.8
+      },
+      {
+        "id": "energy",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 70,
+        "x": 45.5,
+        "z": -22
+      },
+      {
+        "id": "computing-guide",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 57.5,
+        "z": 18
+      },
+      {
+        "id": "computing-support",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 64,
+        "z": 23.5
+      },
+      {
+        "id": "commands",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 60,
+        "z": 16.5
+      },
+      {
+        "id": "business-guide",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 28.5,
+        "z": 60
+      },
+      {
+        "id": "business-support",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 34.5,
+        "z": 62
+      },
+      {
+        "id": "market",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 31,
+        "z": 58.5
+      },
+      {
+        "id": "english-guide",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -26.5,
+        "z": 54
+      },
+      {
+        "id": "english-support",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -20.5,
+        "z": 56
+      },
+      {
+        "id": "story",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -24,
+        "z": 52.5
+      },
+      {
+        "id": "medical-guide",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -63.5,
+        "z": 21
+      },
+      {
+        "id": "medical-support",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -57.5,
+        "z": 23
+      },
+      {
+        "id": "samples",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -61,
+        "z": 23
+      },
+      {
+        "id": "social-guide",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 71,
+        "x": -60.5,
+        "z": -25
+      },
+      {
+        "id": "social-support",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -54.5,
+        "z": -25
+      },
+      {
+        "id": "council",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -58,
+        "z": -23.5
+      },
+      {
+        "id": "mathematics-guide",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -29,
+        "z": -57
+      },
+      {
+        "id": "mathematics-support",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 69,
+        "x": -21,
+        "z": -57.5
+      },
+      {
+        "id": "light",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -25,
+        "z": -58
+      },
+      {
+        "id": "dentistry-guide",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 66,
+        "x": 15,
+        "z": -57
+      },
+      {
+        "id": "dentistry-support",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 66,
+        "x": 21,
+        "z": -57
+      },
+      {
+        "id": "tooth",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 67,
+        "x": 18,
+        "z": -55
+      },
+      {
+        "id": "pharmacy-guide",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 55,
+        "z": -59.5
+      },
+      {
+        "id": "pharmacy-support",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 61.5,
+        "z": -59.5
+      },
+      {
+        "id": "ingredients",
+        "progress": "",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 58,
+        "z": -59.5
+      },
+      {
+        "id": "sera",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 60,
+        "x": -2.5,
+        "z": 10.8
+      },
+      {
+        "id": "mira",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 2.4,
+        "z": 12
+      },
+      {
+        "id": "intro",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 61,
+        "x": 3.6,
+        "z": 8.9
+      },
+      {
+        "id": "archive",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -8,
+        "z": 2.5
+      },
+      {
+        "id": "beacon",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 67,
+        "x": 0,
+        "z": 2.3
+      },
+      {
+        "id": "engineer-switzner",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 24.8,
+        "z": -2.8
+      },
+      {
+        "id": "engineering-support",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 18.4,
+        "z": -2.3
+      },
+      {
+        "id": "bridge",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0.021063873856570936,
+        "approaches": 72,
+        "x": 22,
+        "z": -4.3
+      },
+      {
+        "id": "engineer-energy",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 43,
+        "z": -24.8
+      },
+      {
+        "id": "energy",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 70,
+        "x": 45.5,
+        "z": -22
+      },
+      {
+        "id": "computing-guide",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 57.5,
+        "z": 18
+      },
+      {
+        "id": "computing-support",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 64,
+        "z": 23.5
+      },
+      {
+        "id": "commands",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 60,
+        "z": 16.5
+      },
+      {
+        "id": "business-guide",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 28.5,
+        "z": 60
+      },
+      {
+        "id": "business-support",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 34.5,
+        "z": 62
+      },
+      {
+        "id": "market",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 31,
+        "z": 58.5
+      },
+      {
+        "id": "english-guide",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -26.5,
+        "z": 54
+      },
+      {
+        "id": "english-support",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -20.5,
+        "z": 56
+      },
+      {
+        "id": "story",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -24,
+        "z": 52.5
+      },
+      {
+        "id": "medical-guide",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -63.5,
+        "z": 21
+      },
+      {
+        "id": "medical-support",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -57.5,
+        "z": 23
+      },
+      {
+        "id": "samples",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -61,
+        "z": 23
+      },
+      {
+        "id": "social-guide",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 71,
+        "x": -60.5,
+        "z": -25
+      },
+      {
+        "id": "social-support",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -57.8,
+        "z": -25
+      },
+      {
+        "id": "council",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -58,
+        "z": -23.5
+      },
+      {
+        "id": "mathematics-guide",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -29,
+        "z": -57
+      },
+      {
+        "id": "mathematics-support",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 69,
+        "x": -21,
+        "z": -57.5
+      },
+      {
+        "id": "light",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": -25,
+        "z": -58
+      },
+      {
+        "id": "dentistry-guide",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 66,
+        "x": 15,
+        "z": -57
+      },
+      {
+        "id": "dentistry-support",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 66,
+        "x": 21,
+        "z": -57
+      },
+      {
+        "id": "tooth",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 67,
+        "x": 18,
+        "z": -55
+      },
+      {
+        "id": "pharmacy-guide",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 55,
+        "z": -59.5
+      },
+      {
+        "id": "pharmacy-support",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 61.5,
+        "z": -59.5
+      },
+      {
+        "id": "ingredients",
+        "progress": "bridge,council",
+        "targetAllowed": true,
+        "targetClearance": 0,
+        "approaches": 72,
+        "x": 58,
+        "z": -59.5
+      }
+    ],
+    "lowerBodyCamera": {
+      "minClearance": 0.07609595137315894,
+      "player": [
+        -26,
+        0.7194232195344882,
+        -54
+      ],
+      "camera": [
+        -26,
+        5.414189254119295,
+        -43.61135384239491
+      ]
+    },
+    "interiorFloor": {
+      "position": [
+        31,
+        0.74,
+        67.40924999999996
+      ],
+      "floor": 0.74,
+      "natural": 0.65,
+      "inside": true
+    },
+    "cameraBodyClearance": {
+      "distance": 13.032886776120023,
+      "camera": [
+        40.22153129219444,
+        6.580779520146703,
+        -7.804419166550431
+      ]
+    }
+  }
+}
