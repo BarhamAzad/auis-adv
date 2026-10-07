@@ -1,6 +1,6 @@
-# Version 2 browser verification
+# Version 2.1 browser verification
 
-The production release was built with Vite and tested in installed Google Chrome using Playwright's `channel: 'chrome'` and a real WebGL canvas. **131 browser checks passed; no failing checks or browser runtime errors remain.** The state regression suite also passed.
+The production release was built with Vite and tested in installed Google Chrome using Playwright's `channel: 'chrome'` and a real WebGL canvas. **182 browser checks passed; no failing checks or browser runtime errors remain.** The state regression suite also passed.
 
 ## Browser and hardware
 
@@ -9,8 +9,8 @@ The production release was built with Vite and tested in installed Google Chrome
 - GPU vendor: **Google Inc. (Apple)**. Renderer: **ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)**.
 - Desktop viewport **1440 × 900**, device scale **1**; all ten regions sampled.
 - Retina viewport **1440 × 900**, device scale **2**; five representative regions in both presets. High renders at **2592 × 1620** (pixel ratio 1.8); Balanced at **1655 × 1035** (pixel ratio 1.15).
-- Responsive panels checked at **320, 390, 768, 1024 and 1440 px**. Phone screenshots and real automated touch input use **390 × 844**.
-- Production URL used: `http://127.0.0.1:4180/`. Final measurement time (UTC): `2026-10-06T13:11:46.431Z`.
+- Responsive panels checked at **320, 390, 768, 1024 and 1440 px**. Phone screenshots and real automated touch input use **390 × 844**, with an additional compact welcome/touch check at **320 × 568**.
+- Production URL used: `http://127.0.0.1:4180/`. Final measurement time (UTC): `2026-10-07T09:33:37.380Z`.
 
 ## Measured performance
 
@@ -20,18 +20,18 @@ Four short stationary samples per view were collected after a warm-up. The final
 | --- | ---: | ---: | ---: |
 | Academic Preparatory Program | 60 | 197 | 530,808 |
 | Department of Engineering | 60 | 141 | 471,104 |
-| Department of Computing and Informatics | 60 | 180 | 479,262 |
+| Department of Computing and Informatics | 55–60 | 180 | 479,262 |
 | Department of Business Administration | 60 | 65 | 384,048 |
 | Department of English | 60 | 70 | 414,256 |
 | Department of Medical & Health Sciences | 60 | 87 | 423,914 |
 | Department of Social Sciences and Law | 60 | 66 | 389,500 |
-| Department of Mathematics and Natural Sciences | 54–60 | 63 | 380,448 |
+| Department of Mathematics and Natural Sciences | 60 | 63 | 380,448 |
 | College of Dentistry | 60 | 73 | 397,292 |
 | College of Pharmacy | 60 | 90 | 427,800 |
 
 | Retina region | High FPS | Balanced FPS |
 | --- | ---: | ---: |
-| Academic Preparatory Program | 53–60 | 60 |
+| Academic Preparatory Program | 60 | 60 |
 | Department of Engineering | 60 | 60 |
 | Department of Computing and Informatics | 60 | 60 |
 | Department of Mathematics and Natural Sciences | 60 | 60 |
@@ -41,12 +41,15 @@ These are warmed stationary samples on one Apple M1 Pro, with a 60 Hz frame-rate
 
 ## Acceptance coverage
 
+The 7 October 2026 logo/palette update was retested with the activity, UI, branding and production suites. On-foot route and collision/camera evidence is retained from 6 October; geometry, movement, quest IDs and save behavior are unchanged by this update.
+
 | Suite | Passed | Evidence |
 | --- | ---: | --- |
 | Complete adventure/activity acceptance | 27 | [browser-results.json](browser-results.json) |
 | On-foot routes and interactions | 37 | [routes-results.json](routes-results.json) |
 | World/movement/camera regressions | 15 | [world-audit-results.json](world-audit-results.json) |
 | Content/interface/audio/responsive regressions | 16 | [ui-audit-results.json](ui-audit-results.json) |
+| Supplied logo, contrast and responsive branding | 51 | [branding-results.json](branding-results.json) |
 | Production interactions, assets and runtime | 36 | [production-results.json](production-results.json) |
 | Legacy/corrupt saves and unavailable storage | State suite passed | `tests/state.mjs` |
 
@@ -58,12 +61,22 @@ World checks cover actual wall sliding, running/jumping at the unrepaired river,
 
 UI checks cover exact official names, long-name maps and archives, native keyboard selection, opener focus and modal focus containment, saving actual position, corrupt/duplicate save recovery, blocked-storage feedback, audio connection count/cancellation/resume races, saved music through keyboard gestures, unavailable audio, OS reduced motion, activity replay/retest feedback, all activity and faculty panels at 390 px, and touch/music/prompt control overlap. The audio check waits for scheduled cancellation to become observable, with a 500 ms failure timeout.
 
+## Logo and palette verification
+
+The user-supplied AUIS PNG is bundled unchanged in the header and browser favicon. Palette colors were sampled from its pixels: navy `#182b55`, gold `#c89921`, white `#ffffff`. Desktop and touch-phone branding checks preserve the square logo and accessible header name, keep all four menus and eleven activity panels usable, and exercise keyboard hints/returns. Computed text contrast for sampled welcome, settings and activity controls is at least 4.5:1; exact measurements are in [branding-results.json](branding-results.json). The final rebuilt site also passed a byte-for-byte served-logo comparison and an automated touch tap on Begin at 320 × 568.
+
 ## Inspected screenshots
 
-All captures below are from the running improved release. Visual inspection corrected an intersecting tree crown, a camera inside the explorer near the crane, a foreground ridge hiding feet, and phone control/prompt overlaps. Final captures were reviewed for grounded feet, readable labels, roof/arch forms, scenery and interface layout.
+All captures below are from the running improved release. Visual inspection corrected an intersecting tree crown, a camera inside the explorer near the crane, a foreground ridge hiding feet, phone control/prompt overlaps, and a short-phone welcome card covering the logo. Final captures were reviewed for grounded feet, readable labels, roof/arch forms, scenery and interface layout.
 
 | Capture | File |
 | --- | --- |
+| AUIS logo and navy/gold desktop welcome | [branding-desktop-welcome.png](../public/screenshots/branding-desktop-welcome.png) |
+| Navy/gold academic map | [branding-world-map.png](../public/screenshots/branding-world-map.png) |
+| Branded engineering activity and hint | [branding-activity.png](../public/screenshots/branding-activity.png) |
+| AUIS logo and welcome on a phone | [branding-mobile-welcome.png](../public/screenshots/branding-mobile-welcome.png) |
+| Short-phone welcome with an unobstructed logo | [branding-compact-mobile-welcome.png](../public/screenshots/branding-compact-mobile-welcome.png) |
+| Navy/gold phone map | [branding-mobile-map.png](../public/screenshots/branding-mobile-map.png) |
 | Explorer face, clothing, hands and travel pack | [19-explorer-detail.png](../public/screenshots/19-explorer-detail.png) |
 | APP study halls and starting plaza | [09-app-study-hall.png](../public/screenshots/09-app-study-hall.png) |
 | Engineering fabrication and renewable energy | [10-engineering-workshop.png](../public/screenshots/10-engineering-workshop.png) |

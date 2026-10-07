@@ -6,7 +6,9 @@ Academic information, region definitions, 3D targets, activities and the interfa
 | --- | --- |
 | Verified academic units, programs, minors, faculty specialties and official sources | `src/data/academics.js` |
 | Verification evidence, naming conflicts and unresolved questions | `docs/ACADEMIC_SOURCES.md` |
-| Official unit display names, colors and map positions | `src/game/regions.js` |
+| Official unit display names, world accent colors and map positions | `src/game/regions.js` |
+| Supplied AUIS logo used in the header and favicon | `public/auis-logo.png`, `src/main.js`, `index.html` |
+| Navy/gold/white UI palette and responsive logo sizing | `src/ui/style.css`, `src/ui/activities.css` |
 | Terrain, movement, collision volumes, interaction positions and visible rewards | `src/game/world.js` |
 | Subject-specific buildings, arched halls, equipment and clinic/greenhouse forms | `src/game/architecture.js` |
 | Articulated characters, appearances, distance detail and movement/idle animation | `src/game/characters.js` |
@@ -15,6 +17,10 @@ Academic information, region definitions, 3D targets, activities and the interfa
 | Activity definitions, puzzle behavior and feedback | `src/game/activities.js` |
 | Activity styling | `src/ui/activities.css` |
 | Saved progress, allowed quest IDs and beacon counting | `src/game/state.js` |
+
+## Logo and UI palette
+
+The logo PNG is the unchanged user-supplied image. UI palette tokens come from its navy `#182b55`, gold `#c89921` and white `#ffffff`; keep text and control contrast readable when adjusting their tints. Activity diagrams define a shared palette in `activities.js`, and canvas world-label colors are in `world.js`. Region `color` fields still describe scenery/character accents, while UI maps use the brand palette and numbered full-name selectors.
 
 ## Editing academic information
 

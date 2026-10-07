@@ -1,12 +1,14 @@
 # Lanterns of Learning
 
-An original browser-based, third-person fantasy adventure about discovering AUIS academic fields and restoring a damaged knowledge beacon. Built with Three.js and Vite. The world begins in the Academic Preparatory Program and contains, seven department regions and two college regions, with eleven interactive activities and ten verified faculty guides.
+An original browser-based, third-person fantasy adventure about discovering AUIS academic fields and restoring a damaged knowledge beacon. Built with Three.js and Vite. The world begins in the Academic Preparatory Program and contains seven department regions and two college regions, with eleven interactive activities and ten verified faculty guides.
 
-## Version 2 release
+## Version 2.1 release
 
 The improved release replaces generic houses with subject buildings, gives explorers and guides detailed articulated models, and adds sculpted mountain ranges, branching trees, riverbanks and animated water. Regional labels use the official AUIS names throughout the world and interface. Existing v1 browser saves continue to load under the same key; invalid save fields are repaired safely.
 
-The downloadable package is `AUIS-Lanterns-of-Learning-v2.zip`. It includes source, the ready-to-serve `dist/`, tests, documentation, original asset licenses and new screenshots. Unzip it, open a terminal in its folder, then follow the commands below.
+The supplied AUIS emblem is the header logo and browser favicon. Its sampled navy (`#182b55`), gold (`#c89921`) and white (`#ffffff`) colors now guide the HUD, menus, maps, activity diagrams and world labels. The original PNG is bundled unchanged; fonts and game scenery retain their existing style.
+
+The downloadable package is `AUIS-Lanterns-of-Learning-v2.1.zip`. It includes source, the ready-to-serve `dist/`, tests, documentation, asset provenance/licenses and new screenshots. Unzip it, open a terminal in its folder, then follow the commands below.
 
 ## Run locally
 
@@ -54,9 +56,9 @@ Progress, discoveries, player position and settings are automatically saved in t
 - [Academic source register](docs/ACADEMIC_SOURCES.md): official URLs, faculty verification and classification notes.
 - [Release status](docs/RELEASE_STATUS.md): complete areas and follow-up scope.
 - [Browser test report](docs/TEST_REPORT.md): results, device, performance and screenshots.
-- [Asset register](docs/ASSETS.md): original procedural geometry/audio, font and dependency licenses.
+- [Asset register](docs/ASSETS.md): supplied logo, original procedural geometry/audio, font and dependency licenses.
 
-Academic records are in `src/data/academics.js`, with official source URLs and verification date **2026-10-06**. All fantasy locations, characters other than identified faculty, dialogue, music, quests and visual designs are original. Faculty fantasy roles, appearances and dialogue are explicitly fictional adaptations, without invented histories, quotations or endorsements. The game is an educational adaptation, not an official university product.
+Academic records are in `src/data/academics.js`, with official source URLs and verification date **2026-10-06**. Fantasy locations, characters other than identified faculty, dialogue, music, quests and procedural models are original; the AUIS logo was supplied by the user. Faculty fantasy roles, appearances and dialogue are explicitly fictional adaptations, without invented histories, quotations or endorsements. The game is an educational adaptation, not an official university product.
 
 The overview claims eight departments while linking seven departments and two colleges. The current academic directory and 2025–26 catalog support seven. The game records the unresolved discrepancy instead of inventing an eighth department. APP remains a preparatory program, the library remains a library, and minors are not displayed as degrees.
 
@@ -73,10 +75,13 @@ GAME_URL=http://127.0.0.1:4173/ npm run test:browser
 GAME_URL=http://127.0.0.1:4173/ npm run test:routes
 GAME_URL=http://127.0.0.1:4173/ npm run test:world
 GAME_URL=http://127.0.0.1:4173/ npm run test:ui
+GAME_URL=http://127.0.0.1:4173/ npm run test:branding
 GAME_URL=http://127.0.0.1:4173/ npm run test:production
 ```
 
 `test:browser` solves all eleven activities through their controls. `test:routes` walks to all 34 characters and stations with real WASD/Shift input, repairs the crossing through its UI and continues across the bridge; it never repositions the explorer through debug navigation. `test:world` covers collisions, jumping, camera obstruction, input release and target placement; `test:ui` covers names, focus, audio, storage and responsive panels. Scenario tests use the documented `window.__AUIS_GAME__` observability bridge for repeatable setup, without bypassing activity solutions. `test:production` captures each region and records desktop/Retina frame rate, draw calls, triangle counts, browser/GPU and hardware. Run this benchmark on its own for representative timings.
+
+`test:branding` checks the supplied logo, palette contrast, responsive header and menus, and captures desktop/phone branding views.
 
 Results are written to `docs/*-results.json`; screenshots are in `public/screenshots/`. On a platform without installed Chrome, install Chrome or explicitly change the launch to Playwright Chromium after `npx playwright install chromium`. The current release was verified on Chrome/Apple M1 Pro; other browser and mobile GPU performance remains unmeasured.
 # auis-adv

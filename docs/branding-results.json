@@ -1,0 +1,445 @@
+{
+  "testedAt": "2026-10-07T09:31:47.275Z",
+  "browser": "Google Chrome 154.0.8037.98",
+  "url": "http://127.0.0.1:4180/",
+  "viewports": [
+    "1440×900 desktop",
+    "390×844 touch phone",
+    "320×568 touch phone"
+  ],
+  "checks": [
+    "desktop: supplied logo loads without distortion or clipping",
+    "Supplied PNG favicon, navy browser theme, and exact core brand colors ship",
+    "Welcome primary action, gold label, and body copy meet 4.5:1 contrast",
+    "desktop: map menu fits and supports keyboard activation, focus trapping, and return",
+    "desktop: journal menu fits and supports keyboard activation, focus trapping, and return",
+    "desktop: archive menu fits and supports keyboard activation, focus trapping, and return",
+    "desktop: settings menu fits and supports keyboard activation, focus trapping, and return",
+    "desktop: intro activity fits, and its hint and return controls work with the keyboard",
+    "desktop: bridge activity fits, and its hint and return controls work with the keyboard",
+    "desktop: energy activity fits, and its hint and return controls work with the keyboard",
+    "desktop: commands activity fits, and its hint and return controls work with the keyboard",
+    "desktop: market activity fits, and its hint and return controls work with the keyboard",
+    "desktop: story activity fits, and its hint and return controls work with the keyboard",
+    "desktop: samples activity fits, and its hint and return controls work with the keyboard",
+    "desktop: council activity fits, and its hint and return controls work with the keyboard",
+    "desktop: light activity fits, and its hint and return controls work with the keyboard",
+    "desktop: tooth activity fits, and its hint and return controls work with the keyboard",
+    "desktop: ingredients activity fits, and its hint and return controls work with the keyboard",
+    "phone: supplied logo loads without distortion or clipping",
+    "phone: map menu fits and supports keyboard activation, focus trapping, and return",
+    "phone: journal menu fits and supports keyboard activation, focus trapping, and return",
+    "phone: archive menu fits and supports keyboard activation, focus trapping, and return",
+    "phone: settings menu fits and supports keyboard activation, focus trapping, and return",
+    "phone: intro activity fits, and its hint and return controls work with the keyboard",
+    "phone: bridge activity fits, and its hint and return controls work with the keyboard",
+    "phone: energy activity fits, and its hint and return controls work with the keyboard",
+    "phone: commands activity fits, and its hint and return controls work with the keyboard",
+    "phone: market activity fits, and its hint and return controls work with the keyboard",
+    "phone: story activity fits, and its hint and return controls work with the keyboard",
+    "phone: samples activity fits, and its hint and return controls work with the keyboard",
+    "phone: council activity fits, and its hint and return controls work with the keyboard",
+    "phone: light activity fits, and its hint and return controls work with the keyboard",
+    "phone: tooth activity fits, and its hint and return controls work with the keyboard",
+    "phone: ingredients activity fits, and its hint and return controls work with the keyboard",
+    "compact phone: supplied logo loads without distortion or clipping",
+    "compact phone: map menu fits and supports keyboard activation, focus trapping, and return",
+    "compact phone: journal menu fits and supports keyboard activation, focus trapping, and return",
+    "compact phone: archive menu fits and supports keyboard activation, focus trapping, and return",
+    "compact phone: settings menu fits and supports keyboard activation, focus trapping, and return",
+    "compact phone: intro activity fits, and its hint and return controls work with the keyboard",
+    "compact phone: bridge activity fits, and its hint and return controls work with the keyboard",
+    "compact phone: energy activity fits, and its hint and return controls work with the keyboard",
+    "compact phone: commands activity fits, and its hint and return controls work with the keyboard",
+    "compact phone: market activity fits, and its hint and return controls work with the keyboard",
+    "compact phone: story activity fits, and its hint and return controls work with the keyboard",
+    "compact phone: samples activity fits, and its hint and return controls work with the keyboard",
+    "compact phone: council activity fits, and its hint and return controls work with the keyboard",
+    "compact phone: light activity fits, and its hint and return controls work with the keyboard",
+    "compact phone: tooth activity fits, and its hint and return controls work with the keyboard",
+    "compact phone: ingredients activity fits, and its hint and return controls work with the keyboard",
+    "Branding and responsive screens produce no browser runtime errors"
+  ],
+  "failures": [],
+  "errors": [],
+  "measurements": {
+    "viewports": [
+      {
+        "label": "desktop",
+        "width": 1440,
+        "height": 900,
+        "documentOverflow": 0,
+        "logo": {
+          "x": 32,
+          "y": 28,
+          "width": 56,
+          "height": 56,
+          "right": 88,
+          "bottom": 84,
+          "clipping": [],
+          "occluded": false,
+          "transform": "none",
+          "wrapperTransform": "none",
+          "objectFit": "contain",
+          "naturalWidth": 447,
+          "naturalHeight": 447,
+          "currentSrc": "http://127.0.0.1:4180/auis-logo.png",
+          "complete": true
+        },
+        "menus": [
+          {
+            "menu": "map",
+            "x": 971.78125,
+            "y": 34.5,
+            "width": 110.15625,
+            "height": 43,
+            "right": 1081.9375,
+            "bottom": 77.5,
+            "display": "flex",
+            "occluded": false
+          },
+          {
+            "menu": "journal",
+            "x": 1090.9375,
+            "y": 34.5,
+            "width": 127.921875,
+            "height": 43,
+            "right": 1218.859375,
+            "bottom": 77.5,
+            "display": "flex",
+            "occluded": false
+          },
+          {
+            "menu": "archive",
+            "x": 1227.859375,
+            "y": 34.5,
+            "width": 129.140625,
+            "height": 43,
+            "right": 1357,
+            "bottom": 77.5,
+            "display": "flex",
+            "occluded": false
+          },
+          {
+            "menu": "settings",
+            "x": 1366,
+            "y": 34.5,
+            "width": 42,
+            "height": 43,
+            "right": 1408,
+            "bottom": 77.5,
+            "display": "flex",
+            "occluded": false
+          }
+        ],
+        "welcome": {
+          "x": 32,
+          "y": 375.796875,
+          "width": 320,
+          "height": 304.203125,
+          "right": 352,
+          "bottom": 680
+        }
+      },
+      {
+        "label": "phone",
+        "width": 390,
+        "height": 844,
+        "documentOverflow": 0,
+        "logo": {
+          "x": 13,
+          "y": 15,
+          "width": 40,
+          "height": 40,
+          "right": 53,
+          "bottom": 55,
+          "clipping": [],
+          "occluded": false,
+          "transform": "none",
+          "wrapperTransform": "none",
+          "objectFit": "contain",
+          "naturalWidth": 447,
+          "naturalHeight": 447,
+          "currentSrc": "http://127.0.0.1:4180/auis-logo.png",
+          "complete": true
+        },
+        "menus": [
+          {
+            "menu": "map",
+            "x": 233,
+            "y": 18.5,
+            "width": 33,
+            "height": 33,
+            "right": 266,
+            "bottom": 51.5,
+            "display": "flex",
+            "occluded": false
+          },
+          {
+            "menu": "journal",
+            "x": 270,
+            "y": 18.5,
+            "width": 33,
+            "height": 33,
+            "right": 303,
+            "bottom": 51.5,
+            "display": "flex",
+            "occluded": false
+          },
+          {
+            "menu": "archive",
+            "x": 307,
+            "y": 18.5,
+            "width": 33,
+            "height": 33,
+            "right": 340,
+            "bottom": 51.5,
+            "display": "flex",
+            "occluded": false
+          },
+          {
+            "menu": "settings",
+            "x": 344,
+            "y": 18.5,
+            "width": 33,
+            "height": 33,
+            "right": 377,
+            "bottom": 51.5,
+            "display": "flex",
+            "occluded": false
+          }
+        ],
+        "welcome": {
+          "x": 18,
+          "y": 277.8125,
+          "width": 260,
+          "height": 306.1875,
+          "right": 278,
+          "bottom": 584
+        }
+      },
+      {
+        "label": "compact phone",
+        "width": 320,
+        "height": 568,
+        "documentOverflow": 0,
+        "logo": {
+          "x": 13,
+          "y": 17.5,
+          "width": 40,
+          "height": 40,
+          "right": 53,
+          "bottom": 57.5,
+          "clipping": [],
+          "occluded": false,
+          "transform": "none",
+          "wrapperTransform": "none",
+          "objectFit": "contain",
+          "naturalWidth": 447,
+          "naturalHeight": 447,
+          "currentSrc": "http://127.0.0.1:4180/auis-logo.png",
+          "complete": true
+        },
+        "menus": [
+          {
+            "menu": "map",
+            "x": 163,
+            "y": 21,
+            "width": 33,
+            "height": 33,
+            "right": 196,
+            "bottom": 54,
+            "display": "flex",
+            "occluded": false
+          },
+          {
+            "menu": "journal",
+            "x": 200,
+            "y": 21,
+            "width": 33,
+            "height": 33,
+            "right": 233,
+            "bottom": 54,
+            "display": "flex",
+            "occluded": false
+          },
+          {
+            "menu": "archive",
+            "x": 237,
+            "y": 21,
+            "width": 33,
+            "height": 33,
+            "right": 270,
+            "bottom": 54,
+            "display": "flex",
+            "occluded": false
+          },
+          {
+            "menu": "settings",
+            "x": 274,
+            "y": 21,
+            "width": 33,
+            "height": 33,
+            "right": 307,
+            "bottom": 54,
+            "display": "flex",
+            "occluded": false
+          }
+        ],
+        "welcome": {
+          "x": 18,
+          "y": 131.8125,
+          "width": 260,
+          "height": 306.1875,
+          "right": 278,
+          "bottom": 438
+        }
+      }
+    ],
+    "contrast": [
+      {
+        "name": "navy on gold primary action",
+        "selector": "#begin",
+        "color": "rgb(24, 43, 85)",
+        "background": [
+          200,
+          153,
+          33
+        ],
+        "ratio": 5.301
+      },
+      {
+        "name": "gold on navy welcome label",
+        "selector": "#welcome .eyebrow",
+        "color": "rgb(200, 153, 33)",
+        "background": [
+          23.87999982,
+          42.7850021,
+          84.575
+        ],
+        "ratio": 5.318
+      },
+      {
+        "name": "welcome body text",
+        "selector": "#welcome p",
+        "color": "rgb(255, 255, 255)",
+        "background": [
+          23.87999982,
+          42.7850021,
+          84.575
+        ],
+        "ratio": 13.9
+      },
+      {
+        "name": "welcome save note",
+        "selector": "#welcome > small",
+        "color": "rgb(200, 153, 33)",
+        "background": [
+          23.87999982,
+          42.7850021,
+          84.575
+        ],
+        "ratio": 5.318
+      },
+      {
+        "name": "modal body text",
+        "selector": ".settings-row p",
+        "color": "rgb(255, 255, 255)",
+        "background": [
+          24,
+          43,
+          85
+        ],
+        "ratio": 13.856
+      },
+      {
+        "name": "modal gold label",
+        "selector": ".modal-header .eyebrow",
+        "color": "rgb(200, 153, 33)",
+        "background": [
+          32.085,
+          50.42,
+          90.94999999999999
+        ],
+        "ratio": 4.794
+      },
+      {
+        "name": "modal primary action",
+        "selector": "#save-now",
+        "color": "rgb(24, 43, 85)",
+        "background": [
+          200,
+          153,
+          33
+        ],
+        "ratio": 5.301
+      },
+      {
+        "name": "modal muted body text",
+        "selector": "#save-status",
+        "color": "color(srgb 0.864118 0.875294 0.9)",
+        "background": [
+          24,
+          43,
+          85
+        ],
+        "ratio": 10.404
+      },
+      {
+        "name": "activity instruction text",
+        "selector": ".activity-description",
+        "color": "color(srgb 0.864118 0.875294 0.9)",
+        "background": [
+          24,
+          43,
+          85
+        ],
+        "ratio": 10.404
+      },
+      {
+        "name": "activity gold label",
+        "selector": ".activity-eyebrow",
+        "color": "rgb(200, 153, 33)",
+        "background": [
+          24,
+          43,
+          85
+        ],
+        "ratio": 5.301
+      },
+      {
+        "name": "activity primary action",
+        "selector": "[data-action=\"test\"]",
+        "color": "rgb(24, 43, 85)",
+        "background": [
+          200,
+          153,
+          33
+        ],
+        "ratio": 5.301
+      }
+    ],
+    "brand": {
+      "theme": "#182b55",
+      "icons": [
+        {
+          "href": "/auis-logo.png",
+          "type": "image/png"
+        }
+      ],
+      "colors": {
+        "--brand-navy": "#182b55",
+        "--brand-gold": "#c89921",
+        "--brand-white": "#ffffff"
+      }
+    }
+  },
+  "screenshots": [
+    "public/screenshots/branding-desktop-welcome.png",
+    "public/screenshots/branding-world-map.png",
+    "public/screenshots/branding-activity.png",
+    "public/screenshots/branding-mobile-welcome.png",
+    "public/screenshots/branding-mobile-map.png",
+    "public/screenshots/branding-compact-mobile-welcome.png"
+  ]
+}

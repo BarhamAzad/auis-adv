@@ -10,7 +10,7 @@
     "vendor": "Google Inc. (Apple)",
     "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
   },
-  "testedAt": "2026-10-06T13:11:46.431Z",
+  "testedAt": "2026-10-07T09:33:37.380Z",
   "checks": [
     "Production build and bundled fonts render",
     "Approach and interact: sera",
@@ -144,7 +144,7 @@
       "quality": "high",
       "samples": [
         {
-          "fps": 60,
+          "fps": 55,
           "drawCalls": 180,
           "triangles": 479262,
           "pixelRatio": 1,
@@ -359,7 +359,7 @@
       "quality": "high",
       "samples": [
         {
-          "fps": 54,
+          "fps": 60,
           "drawCalls": 63,
           "triangles": 380448,
           "pixelRatio": 1,
@@ -488,7 +488,7 @@
       "quality": "high",
       "samples": [
         {
-          "fps": 53,
+          "fps": 60,
           "drawCalls": 197,
           "triangles": 530808,
           "pixelRatio": 1.8,

@@ -1,6 +1,6 @@
 {
   "name": "auis-lanterns-of-learning",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -12,7 +12,8 @@
     "test:production": "node tests/production.mjs",
     "test:routes": "node tests/routes.mjs",
     "test:world": "node tests/world-audit.mjs",
-    "test:ui": "node tests/ui-audit.mjs"
+    "test:ui": "node tests/ui-audit.mjs",
+    "test:branding": "node tests/branding.mjs"
   },
   "dependencies": {
     "lucide": "^0.468.0",

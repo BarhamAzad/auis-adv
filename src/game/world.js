@@ -83,12 +83,12 @@ export function createWorld(container, callbacks = {}, initialState = {}) {
   function cylinder(r1, r2, h, color, x, y, z, parent = scene, segments = 12) { return mesh(new THREE.CylinderGeometry(r1, r2, h, segments), color, x, y, z, parent); }
   function sphere(r, color, x, y, z, parent = scene, detail = 1) { return mesh(new THREE.IcosahedronGeometry(r, detail), color, x, y, z, parent); }
   function addCollider(x, z, w, d, h = 6) { colliders.push({ x, z, w: w / 2 + .34, d: d / 2 + .34, y: terrainSurface(x, z), h }); }
-  function label(text, { color = '#ffde9a', scale = 1, marker = false } = {}) {
+  function label(text, { color = '#c89921', scale = 1, marker = false } = {}) {
     const canvas = document.createElement('canvas'); canvas.width = marker ? 128 : 640; canvas.height = marker ? 128 : 192;
     const ctx = canvas.getContext('2d');
     if (marker) {
       ctx.fillStyle = color; ctx.beginPath(); ctx.arc(64, 64, 47, 0, TAU); ctx.fill();
-      ctx.fillStyle = '#18362e'; ctx.font = 'bold 66px Georgia'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(text, 64, 67);
+      ctx.fillStyle = '#182b55'; ctx.font = 'bold 66px Georgia'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(text, 64, 67);
     } else {
       ctx.font = '600 29px system-ui, sans-serif';
       const lines = []; let line = '';
@@ -98,7 +98,7 @@ export function createWorld(container, callbacks = {}, initialState = {}) {
       }
       lines.push(line);
       const height = lines.length * 39 + 26, top = (192 - height) / 2;
-      ctx.fillStyle = 'rgba(24, 49, 43, .87)'; ctx.beginPath(); ctx.roundRect(10, top, 620, height, 20); ctx.fill();
+      ctx.fillStyle = '#182b55'; ctx.beginPath(); ctx.roundRect(10, top, 620, height, 20); ctx.fill();
       ctx.fillStyle = color; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
       lines.forEach((value, i) => ctx.fillText(value, 320, top + 33 + i * 39));
     }
@@ -165,7 +165,7 @@ export function createWorld(container, callbacks = {}, initialState = {}) {
     const y = terrainHeight(x, z); cylinder(.09, .09, 4, '#a28f6d', x, y + 2, z); const flag = box(1.2, .7, .04, c, x + .55, y + 3.55, z); drifting.push({ mesh: flag, base: flag.rotation.z, kind: 'flag' });
   }
   function signpost(x, z, title) {
-    const y = terrainHeight(x, z); cylinder(.09, .12, 2, '#8c7452', x, y + 1, z); box(1.8, .5, .16, '#c5a87b', x, y + 1.6, z); const s = label(title, { scale: .42, color: '#fff3ce' }); s.position.set(x, y + 2.45, z); scene.add(s);
+    const y = terrainHeight(x, z); cylinder(.09, .12, 2, '#8c7452', x, y + 1, z); box(1.8, .5, .16, '#c5a87b', x, y + 1.6, z); const s = label(title, { scale: .42, color: '#ffffff' }); s.position.set(x, y + 2.45, z); scene.add(s);
   }
   signpost(12, 3, 'Department of Engineering →'); signpost(-14, 18, '← Department of Medical & Health Sciences');
 
@@ -260,9 +260,9 @@ export function createWorld(container, callbacks = {}, initialState = {}) {
     const y = terrainSurface(x, z);
     const item = { ...target, position: new THREE.Vector3(x, y, z), basePosition: new THREE.Vector3(x, y, z) };
     if (withCharacter) { const npc = character(color || '#567e80', target.type === 'faculty' ? '#e2bc79' : '#b88967', .97, false, {seed:target.id, role:target.type, regionId:target.regionId}); npc.position.copy(item.position); npc.rotation.y = .4; scene.add(npc); item.character = npc; }
-    const marker = label(target.type === 'activity' ? '◇' : target.type === 'archive' ? '▤' : target.type === 'beacon' ? '✦' : '!', { marker: true, color: target.type === 'activity' ? '#aee3cf' : '#f4d18c' });
+    const marker = label(target.type === 'activity' ? '◇' : target.type === 'archive' ? '▤' : target.type === 'beacon' ? '✦' : '!', { marker: true, color: target.type === 'activity' ? '#ffffff' : '#c89921' });
     marker.position.set(x, y + (withCharacter ? 3.05 : 2.4), z); scene.add(marker); item.marker = marker;
-    const name = label(target.name, { color: target.type === 'faculty' ? '#ffdfa0' : '#d6eee3', scale: .68 }); name.position.set(x, y + (withCharacter ? 3.8 : 3.1), z); scene.add(name); item.labelSprite = name;
+    const name = label(target.name, { color: target.type === 'faculty' ? '#c89921' : '#ffffff', scale: .68 }); name.position.set(x, y + (withCharacter ? 3.8 : 3.1), z); scene.add(name); item.labelSprite = name;
     targets.push(item); return item;
   }
   addTarget({ id: 'sera', type: 'support', regionId: 'village', name: 'Sera · Study mentor', label: 'Talk to Sera' }, -2.5, 10.8, true, '#9c8767');
@@ -305,7 +305,7 @@ export function createWorld(container, callbacks = {}, initialState = {}) {
   }
 
   for (const r of regions) {
-    const placeLabel = label(r.name, { color: r.color, scale: 1.2 });
+    const placeLabel = label(r.name, { color: '#ffffff', scale: 1.2 });
     placeLabel.position.set(r.x, terrainSurface(r.x, r.z) + 8, r.z); scene.add(placeLabel);
     placeLabel.userData.regionLabel = true; placeLabel.userData.screenWidth = 340;
   }

@@ -1,6 +1,10 @@
-# Version 2 release status
+# Version 2.1 release status
 
 The visual and gameplay improvement release is implemented. The starting area is the Academic Preparatory Program. All nine academic region names use the official AUIS unit names; the Moulakis Archive retains its fictional name. Internal region/quest IDs and the v1 save key remain compatible with existing journeys.
+
+The 7 October 2026 branding update uses the supplied AUIS emblem in the header and browser tab. Its navy `#182b55`, gold `#c89921` and white `#ffffff` palette is applied to the HUD, welcome panel, menus, maps, settings, activity diagrams and world labels. The original image is bundled unchanged, and logo sizing preserves its proportions at desktop and phone widths.
+
+On short phones, the welcome card clears the header, scrolls when needed, and appears above the touch controls so its Begin button remains clickable.
 
 | Area | Scenery and learning space | Activities |
 | --- | --- | --- |
@@ -31,7 +35,7 @@ Music has one output connection, resumes after pointer or keyboard gestures, can
 
 The production build and all browser suites run in installed Google Chrome with hardware-backed WebGL. All eleven activities have been solved through their controls. The route suite reaches every guide, companion and activity with actual keyboard walking, repairs the crossing through its UI and continues on foot across the bridge. Separate world and interface suites cover collision/camera/input, floors, saves, focus, audio, responsive layouts and academic classifications.
 
-See [TEST_REPORT.md](TEST_REPORT.md), machine-readable `*-results.json`, and the inspected screenshots in `public/screenshots/`. The refreshed production site is `dist/`; the complete source/build/documentation package is `AUIS-Lanterns-of-Learning-v2.zip`.
+See [TEST_REPORT.md](TEST_REPORT.md), machine-readable `*-results.json`, and the inspected screenshots in `public/screenshots/`. The refreshed production site is `dist/`; the complete source/build/documentation package is `AUIS-Lanterns-of-Learning-v2.1.zip`.
 
 ## Known limits
 
